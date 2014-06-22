@@ -58,7 +58,7 @@ As discussed under Assumptions the original variable names have been transformed
 | Y at the end of the variable name | y_axis |
 | Z at the end of the variable name | z_axis |
 
-In addition, the underscore has been used as a word boudary between each of the individual elements of the new variable name to make them easier to read.  Note that the actual code for renaming the -mean() and -std() elements searches for .mean.. and .std.. as R replaces the characters '-', '(', and ')' which are the values in the data file with the '.' symbol.  All transformed elements are lower case for consistency and readability.
+In addition, the underscore has been used as a word boudary between each of the individual elements of the new variable name to make them easier to read. All transformed elements are lower case for consistency and readability.
 
 A description of what each of these elements represents can be found in the accompanying Code Book.
 
