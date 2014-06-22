@@ -1,0 +1,359 @@
+﻿Introduction
+
+This Code book describes the data resulting from running the run_analysis.R script against the Human Activity Recognition Using Smartphones Data Set available here:
+http://archive.ics.uci.edu/ml/datasets/.  For details of what the run_analysis.R script does and how to run it, see the accompanying README.md file.
+
+General Technical Information
+
+The data consists of 180 rows (plus one header row) and 68 columns.  The first two columns (activity and subject_id) are factors and the remaining columns are all numeric variables.  The data is in text format with fields separated by comma.  The first two fields (activity and subject_id) are enclosed by double quotes.  The first row contains column names which are comma separated and double quote enclosed.
+
+Study Design
+
+The study which created the original data was carried out by Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita in November 2012.  This Code Book relates to post processing applied to the results of this study.  The basis of the post processing is to create a data set that combines the training and test data from the original study and to select only those variables that recorded a mean or standard deviation measurement.  These variables were then summarised by taking the mean of all observations for each variable grouped by subject and activity.  The resulting data set can then be used for follow on analysis.  Full details of how the original data was collected and how observations were made can be found in README and info files which accompany the original data.
+
+
+Code Book
+
+There follows a detailed description of each column that appears in the summarised data produced by running the run_analysis.R script against the original data. For every Variable Name  listed below the value is the mean of all observations on that variable for the given subject and activity.  All variables denoted as time_based represent a measurement in the time domain.  All variables denoted as frequency based represent a measurement in frequency domain.  The original values were taken from the gyroscope and accelerometer of a Samsung Galaxy SII.  The original accelerometer readings are in standard gravity units and the gyroscope readings are in radians per second.  Note that the variable names are different from those found in the original data.  To understands what transformations were applied to the variable names please see the accompanying README.md
+
+
+Column Name: activity
+Type: Character 
+Format: ASCII
+Description: Can take one of 6 values: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING.  Describes the activity the subject was engaged in when observations were taken
+
+Column Name: subject_id
+Type: integer 
+Format: Positive Integer
+Description: Can take a value between 1 and 30 inclusive and represents a unique identifier for the subject involved in the activity.
+
+Variable Name: time_based_body_acceleration_mean_x_axis
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description:  The mean of the subject's body acceleration along the x axis
+
+Variable Name: time_based_body_acceleration_mean_y_axis
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The mean of the subject's body acceleration along the y axis
+
+Variable Name: time_based_body_acceleration_mean_z_axis
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The mean of the subject's body acceleration along the z axis
+
+Variable Name: time_based_body_acceleration_std_x_axis
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The standard deviation of the subject's body acceleration along the x axis
+
+Variable Name: time_based_body_acceleration_std_y_axis
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The standard deviation of the subject's body acceleration along the y axis
+
+Variable Name: time_based_body_acceleration_std_z_axis
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The standard deviation of the subject's body acceleration along the z axis
+
+Variable Name: time_based_gravity_acceleration_mean_x_axis
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The mean of the subject's gravitational acceleration along the x axis
+
+Variable Name: time_based_gravity_acceleration_mean_y_axis
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The mean of the subject's gravitational acceleration along the y axis
+
+Variable Name: time_based_gravity_acceleration_mean_z_axis
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The mean of the subject's gravitational acceleration along the z axis
+
+Variable Name: time_based_gravity_acceleration_std_x_axis
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The standard deviation of the subject's gravitational acceleration along the x axis
+
+Variable Name: time_based_gravity_acceleration_std_y_axis
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The standard deviation of the subject's gravitational acceleration along the y axis
+
+Variable Name: time_based_gravity_acceleration_std_z_axis
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The standard deviation of the subject's gravitational acceleration along the z axis
+
+Variable Name: time_based_body_acceleration_jerk_mean_x_axis
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The mean of the subject's body jerk along the x axis
+
+Variable Name: time_based_body_acceleration_jerk_mean_y_axis
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The mean of the subject's body jerk along the y axis
+
+Variable Name: time_based_body_acceleration_jerk_mean_z_axis
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The mean of the subject's body jerk along the z axis
+
+Variable Name: time_based_body_acceleration_jerk_std_x_axis
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The standard deviation of the subject's body jerk along the x axis
+
+Variable Name: time_based_body_acceleration_jerk_std_y_axis
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The standard deviation of the subject's body jerk along the y axis
+
+Variable Name: time_based_body_acceleration_jerk_std_z_axis
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The standard deviation of the subject's body jerk along the z axis
+
+Variable Name: time_based_body_gyro_mean_x_axis
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The mean of the subject's body gyration along the x axis
+
+Variable Name: time_based_body_gyro_mean_y_axis
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The mean of the subject's body gyration along the y axis
+
+Variable Name: time_based_body_gyro_mean_z_axis
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The mean of the subject's body gyration along the z axis
+
+Variable Name: time_based_body_gyro_std_x_axis
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The standard deviation of the subject's body gyration along the x axis
+
+Variable Name: time_based_body_gyro_std_y_axis
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The standard deviation of the subject's body gyration along the y axis
+
+Variable Name: time_based_body_gyro_std_z_axis
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The standard deviation of the subject's body gyration along the z axis
+
+Variable Name: time_based_body_gyro_jerk_mean_x_axis
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The mean of the subject's body gyration jerk along the x axis
+
+Variable Name: time_based_body_gyro_jerk_mean_y_axis
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The mean of the subject's body gyration jerk along the y axis
+
+Variable Name: time_based_body_gyro_jerk_mean_z_axis
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The mean of the subject's body gyration jerk along the z axis
+
+Variable Name: time_based_body_gyro_jerk_std_x_axis
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The standard deviation of the subject's body gyration jerk along the x axis
+
+Variable Name: time_based_body_gyro_jerk_std_y_axis
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The standard deviation of the subject's body gyration jerk along the y axis
+
+Variable Name: time_based_body_gyro_jerk_std_z_axis
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The standard deviation of the subject's body gyration jerk along the z axis
+
+Variable Name: time_based_body_acceleration_magnitude_mean
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The mean of the magnitude of the subject's body acceleration
+
+Variable Name: time_based_body_acceleration_magnitude_std
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The standard deviation of the magnitude of the subject's body acceleration
+
+Variable Name: time_based_gravity_acceleration_magnitude_mean
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The mean of the magnitude of the subject's gravitational acceleration
+
+Variable Name: time_based_gravity_acceleration_magnitude_std
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The standard deviation of the magnitude of the subject's gravitational acceleration
+
+Variable Name: time_based_body_acceleration_jerk_magnitude_mean
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The mean of the magnitude of the subject's body jerk
+
+Variable Name: time_based_body_acceleration_jerk_magnitude_std
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The standard deviation of the magnitude of the subject's body jerk
+
+Variable Name: time_based_body_gyro_magnitude_mean
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The mean of the magnitude of the subject's gyration
+
+Variable Name: time_based_body_gyro_magnitude_std
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The standard deviation of the magnitude of the subject's gyration
+
+Variable Name: time_based_body_gyro_jerk_magnitude_mean
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The mean of the magnitude of the subject's body gyration jerk 
+
+Variable Name: time_based_body_gyro_jerk_magnitude_std
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The standard deviation of the  magnitude of the subject's body gyration jerk 
+
+Variable Name: frequency_based_body_acceleration_mean_x_axis
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The mean of body acceleration along the x axis
+
+Variable Name: frequency_based_body_acceleration_mean_y_axis
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The mean of body acceleration along the y axis
+
+Variable Name: frequency_based_body_acceleration_mean_z_axis
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The mean of body acceleration along the z axis
+
+Variable Name: frequency_based_body_acceleration_std_x_axis
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The standard deviation of body acceleration along the x axis
+
+Variable Name: frequency_based_body_acceleration_std_y_axis
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The standard deviation of body acceleration along the x axis
+
+Variable Name: frequency_based_body_acceleration_std_z_axis
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The standard deviation of body acceleration along the x axis
+
+Variable Name: frequency_based_body_acceleration_jerk_mean_x_axis
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The mean of body jerk along the x axis
+
+Variable Name: frequency_based_body_acceleration_jerk_mean_y_axis
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The mean of body jerk along the y axis
+
+Variable Name: frequency_based_body_acceleration_jerk_mean_z_axis
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The mean of body jerk along the z axis
+
+Variable Name: frequency_based_body_acceleration_jerk_std_x_axis
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The standard deviation of body jerk along the x axis
+
+Variable Name: frequency_based_body_acceleration_jerk_std_y_axis
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The standard deviation of body jerk along the y axis
+
+Variable Name: frequency_based_body_acceleration_jerk_std_z_axis
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The standard deviation of body jerk along the z axis
+
+Variable Name: frequency_based_body_gyro_mean_x_axis
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The mean of body gyration along the x axis
+
+Variable Name: frequency_based_body_gyro_mean_y_axis
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The mean of body gyration along the y axis
+
+Variable Name: frequency_based_body_gyro_mean_z_axis
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The mean of body gyration along the z axis
+
+Variable Name: frequency_based_body_gyro_std_x_axis
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The standard deviation of body gyration along the x axis
+
+Variable Name: frequency_based_body_gyro_std_y_axis
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The standard deviation of body gyration along the y axis
+
+Variable Name: frequency_based_body_gyro_std_z_axis
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The standard deviation of body gyration along the z axis
+
+Variable Name: frequency_based_body_acceleration_magnitude_mean
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The mean of the magnitude of the subject's body acceleration
+
+Variable Name: frequency_based_body_acceleration_magnitude_std
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The standard deviation of the magnitude of the subject's body acceleration
+
+Variable Name: frequency_based_body_acceleration_jerk_magnitude_mean
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The mean of the magnitude of the subject's body jerk
+
+Variable Name: frequency_based_body_acceleration_jerk_magnitude_std
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The standard deviation of the magnitude of the subject's body jerk
+
+Variable Name: frequency_based_body_gyro_magnitude_mean
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The mean of the magnitude of the subject's body gyration
+
+Variable Name: frequency_based_body_gyro_magnitude_std
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The standard deviation of the magnitude of the subject's body gyration
+
+Variable Name: frequency_based_body_gyro_jerk_magnitude_mean
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The mean of the magnitude of the subject's body gyration jerk
+
+Variable Name: frequency_based_body_gyro_jerk_magnitude_std
+Type: numeric 
+Format: Positive or Negative decimal number with up to 15 digits of precision
+Description: The standard deviation of the magnitude of the subject's body gyration jerk
+
