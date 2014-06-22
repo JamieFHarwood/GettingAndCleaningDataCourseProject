@@ -17,7 +17,7 @@ There are two files included:
 1. run_analyisi.R – A single R script which will combine, filter, merge rename and transform the source data.
 2. CodeBook.txt – Provides a detailed description of the data produced by run_analysis.R
 
-You will of course also need the source data set.  As files are read into R data objects you will need to modify the script to specify the location of the source data.  The fist variable declarations in the run_analysis.R script allow you to amend locations for all required files, including the final output file.
+You will of course also need the source data set.  As files are read into R data objects you will need to modify the script to specify the location of the source data.  The fist variable declarations in the run_analysis.R script allow you to amend locations for all required files, including the final output file.  The default behaviour is to assume the data is in the current working directory.
 
 ## Usage instructions
 
