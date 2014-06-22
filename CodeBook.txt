@@ -1,10 +1,11 @@
 ﻿Introduction
- This Code book describes the data resulting from running the
+
+This Code book describes the data resulting from running the
 run_analysis.R script against the Human Activity Recognition Using Smartphones
 Data Set available here:
- http://archive.ics.uci.edu/ml/datasets/.  For details
-of what the run_analysis.R script does and how to run it, see the accompanying
-README.md file.
+ http://archive.ics.uci.edu/ml/datasets/.
+For details of what the run_analysis.R script does and how to run it, 
+see the accompanying README.md file.
 
 General Technical Information
 
